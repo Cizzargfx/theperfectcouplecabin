@@ -40,7 +40,7 @@ def sendEmail():
 
     try:
         mail.send(msg)
-        return "Email sent..."
+        return render_template('good.html')
     except Exception as e:
         print(e)
         return f"The Email not sent {e} "
